@@ -1,0 +1,146 @@
+{
+  "backendType": "SECOND_GEN",
+  "connectionName": "sgs-playvox:us-central1:khoros-playvox",
+  "createTime": "2023-07-06T10:30:26.716Z",
+  "databaseInstalledVersion": "SQLSERVER_2019_STANDARD_CU32",
+  "databaseVersion": "SQLSERVER_2019_STANDARD",
+  "etag": "d3c93b9c3820198f458d36dee828b7c1e001d96052b7faa084b33c9a579f5a09",
+  "gceZone": "us-central1-f",
+  "includeReplicasForMajorVersionUpgrade": false,
+  "instanceType": "CLOUD_SQL_INSTANCE",
+  "ipAddresses": [
+    {
+      "ipAddress": "34.66.76.120",
+      "type": "PRIMARY"
+    }
+  ],
+  "kind": "sql#instance",
+  "maintenanceVersion": "SQLSERVER_2019_STANDARD_CU32.R20250727.00_00",
+  "name": "khoros-playvox",
+  "project": "sgs-playvox",
+  "region": "us-central1",
+  "satisfiesPzi": false,
+  "selfLink": "https://sqladmin.googleapis.com/sql/v1beta4/projects/sgs-playvox/instances/khoros-playvox",
+  "serverCaCert": {
+    "cert": "-----BEGIN CERTIFICATE-----\nMIIDfzCCAmegAwIBAgIBADANBgkqhkiG9w0BAQsFADB3MS0wKwYDVQQuEyQ4YjZj\nYTU0MS1lYzU4LTRiMmItOWRiZC1iMzg5YTAxYjdiMTAxIzAhBgNVBAMTGkdvb2ds\nZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUsIEluYzELMAkG\nA1UEBhMCVVMwHhcNMjMwNzA2MTAzMTI2WhcNMzMwNzAzMTAzMjI2WjB3MS0wKwYD\nVQQuEyQ4YjZjYTU0MS1lYzU4LTRiMmItOWRiZC1iMzg5YTAxYjdiMTAxIzAhBgNV\nBAMTGkdvb2dsZSBDbG91ZCBTUUwgU2VydmVyIENBMRQwEgYDVQQKEwtHb29nbGUs\nIEluYzELMAkGA1UEBhMCVVMwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB\nAQCW+kIXXfqT7RrIITfB22vGQ7+RShn1duYByXnzOPKWCzS3emLI3aX3J7HHUVXq\nf5oa8Dj+tPzbk4gng2i5ATa37fUqP7jeiSD0jR5SIMguC4uOHAQge4nsXd47AzdP\n6iVB2GhLJuhM7KnVCoR8lXnsX2B2xnyYLRVdrf2X5krakpGXm8dPChmccJ9xxkH4\nO2wvr+nlUvidar2nAlDlEWCCQJuAKHZXc6dr9+jvH5THX6h5yk0XotwUjUMUz+R2\nKn3OoZTB8Gu7uTELv8cPCvmBLVEwJjKh0cGrsq2GUJBHB3pLzKi0cZ7nDvSPn+Ux\n3Z3ZjuMQ4YNofIz0EGbYmTY9AgMBAAGjFjAUMBIGA1UdEwEB/wQIMAYBAf8CAQAw\nDQYJKoZIhvcNAQELBQADggEBAGwMqWTjfteSRRuz4PFuZbI6suvgkYQ0M+1IZY4Q\njoNbZ67hsXOM6o/1SU9Q1eu5r6hjUBY+zCeMKBYxo+I7uXKPl2IK+b3eFJ6J1vj8\nLrq4SSKaoKaiqjzLedjdI8Spp0MuoI9n5Y0fuUpLv7Rf8lqVftNAyLYnqWr6dKZ+\nezccqw+W9skyjcq5NfyhkrHpZ2nHEV6FfBrQOrp4YbVpb9MMgUXl1wJeU6/q4P4m\ncJ86GK5ozdrpHYTGxbI3uWxtavd2Rs+hduAXsUez6GuFytnaYC8ojClKlyGTXkhb\nlhASOz20YbFQ0qiE2uatraeh8koj7C3fbZptgWHuiUsatuI=\n-----END CERTIFICATE-----",
+    "certSerialNumber": "0",
+    "commonName": "C=US,O=Google\\, Inc,CN=Google Cloud SQL Server CA,dnQualifier=8b6ca541-ec58-4b2b-9dbd-b389a01b7b10",
+    "createTime": "2023-07-06T10:31:26.663Z",
+    "expirationTime": "2033-07-03T10:32:26.663Z",
+    "instance": "khoros-playvox",
+    "kind": "sql#sslCert",
+    "sha1Fingerprint": "dbea8c12a4bbe4c0c08a436a0ff24be34e87c4fd"
+  },
+  "serviceAccountEmailAddress": "p769594606898-jg58mq@gcp-sa-cloud-sql.iam.gserviceaccount.com",
+  "settings": {
+    "activationPolicy": "ALWAYS",
+    "activeDirectoryConfig": {
+      "kind": "sql#activeDirectoryConfig"
+    },
+    "advancedMachineFeatures": {},
+    "availabilityType": "ZONAL",
+    "backupConfiguration": {
+      "backupRetentionSettings": {
+        "retainedBackups": 7,
+        "retentionUnit": "COUNT"
+      },
+      "backupTier": "STANDARD",
+      "enabled": true,
+      "kind": "sql#backupConfiguration",
+      "location": "us",
+      "pointInTimeRecoveryEnabled": false,
+      "startTime": "14:00",
+      "transactionLogRetentionDays": 7,
+      "transactionalLogStorageState": "TRANSACTIONAL_LOG_STORAGE_STATE_UNSPECIFIED"
+    },
+    "collation": "SQL_Latin1_General_CP1_CI_AS",
+    "connectorEnforcement": "NOT_REQUIRED",
+    "dataDiskSizeGb": "100",
+    "dataDiskType": "PD_SSD",
+    "deletionProtectionEnabled": false,
+    "ipConfiguration": {
+      "authorizedNetworks": [
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev4_SCM",
+          "value": "157.47.112.17"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "local_ss",
+          "value": "136.226.243.31"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev_ss",
+          "value": "144.48.50.33"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev2_SC",
+          "value": "110.235.236.218"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev3_SC",
+          "value": "45.112.30.154"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev2",
+          "value": "45.112.30.132"
+        },
+        {
+          "kind": "sql#aclEntry",
+          "name": "Dev3",
+          "value": "45.112.30.167"
+        }
+      ],
+      "ipv4Enabled": true,
+      "requireSsl": false,
+      "sslMode": "ALLOW_UNENCRYPTED_AND_ENCRYPTED"
+    },
+    "kind": "sql#settings",
+    "locationPreference": {
+      "kind": "sql#locationPreference",
+      "zone": "us-central1-f"
+    },
+    "maintenanceWindow": {
+      "day": 0,
+      "hour": 0,
+      "kind": "sql#maintenanceWindow"
+    },
+    "pricingPlan": "PER_USE",
+    "replicationLagMaxSeconds": 31536000,
+    "replicationType": "SYNCHRONOUS",
+    "settingsVersion": "350",
+    "sqlServerAuditConfig": {
+      "kind": "sql#sqlServerAuditConfig",
+      "retentionInterval": "0s",
+      "uploadInterval": "0s"
+    },
+    "storageAutoResize": true,
+    "storageAutoResizeLimit": "0",
+    "tier": "db-custom-2-8192",
+    "timeZone": "UTC"
+  },
+  "sqlNetworkArchitecture": "NEW_NETWORK_ARCHITECTURE",
+  "state": "RUNNABLE",
+  "upgradableDatabaseVersions": [
+    {
+      "displayName": "SQL Server 2019 Enterprise",
+      "majorVersion": "SQLSERVER_2019_ENTERPRISE",
+      "name": "SQLSERVER_2019_ENTERPRISE"
+    },
+    {
+      "displayName": "SQL Server 2022 Standard",
+      "majorVersion": "SQLSERVER_2022_STANDARD",
+      "name": "SQLSERVER_2022_STANDARD"
+    },
+    {
+      "displayName": "SQL Server 2022 Enterprise",
+      "majorVersion": "SQLSERVER_2022_ENTERPRISE",
+      "name": "SQLSERVER_2022_ENTERPRISE"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+gs://sgs-playvox.appspot.com/ :
+	Storage class:			STANDARD
+	Location type:			multi-region
+	Location constraint:		EU
+	Versioning enabled:		None
+	Logging configuration:		None
+	Website configuration:		None
+	CORS configuration: 		None
+	Lifecycle configuration:	None
+	Requester Pays enabled:		None
+	Labels:				
+	  {
+	    "bucket_id": "sgs-playvoxappspotcom6ab9535",
+	    "spotify-com-retention-category": "internal",
+	    "spotify-com-retention-subcategory": "code"
+	  }
+	Default KMS key:		None
+	Time created:			Mon, 26 Jun 2023 16:38:38 GMT
+	Time updated:			Mon, 06 May 2024 18:11:35 GMT
+	Metageneration:			3
+	Bucket Policy Only enabled:	True
+	Public access prevention:	inherited
+	RPO:				DEFAULT
+	ACL:				[]
+	Default ACL:			[]

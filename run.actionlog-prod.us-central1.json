@@ -1,0 +1,115 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "cloud-console",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "aa11db47-9ba3-4874-b310-b204f36cef1c",
+      "run.googleapis.com/urls": "[\"https://actionlog-prod-769594606898.us-central1.run.app\",\"https://actionlog-prod-wwlo4ssava-uc.a.run.app\"]",
+      "serving.knative.dev/creator": "api-khoros-playvox@spotify.com",
+      "serving.knative.dev/lastModifier": "api-khoros-playvox@spotify.com"
+    },
+    "creationTimestamp": "2023-07-14T12:38:30.600634Z",
+    "generation": 12,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "name": "actionlog-prod",
+    "namespace": "769594606898",
+    "resourceVersion": "AAYC3gqBGys",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/769594606898/services/actionlog-prod",
+    "uid": "927440cc-cd5a-4fc3-b422-7f0e25366ea7"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cloudsql-instances": "sgs-playvox:us-central1:khoros-playvox-prod"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "8b73ea71-1547-4e82-b3c3-5c38ada4757b",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "SPRING_PROFILES_ACTIVE",
+                "value": "prod"
+              }
+            ],
+            "image": "gcr.io/sgs-playvox/github.com/khorospv/actionlog@sha256:5a29f96110f5fe94bdd2a6d1a910ec9fd29415f90f2a5cca216b802612210354",
+            "ports": [
+              {
+                "containerPort": 8084,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "2000m",
+                "memory": "8Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8084
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "sgs-playvox-cloudrun@sgs-playvox.iam.gserviceaccount.com",
+        "timeoutSeconds": 1200
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://actionlog-prod-wwlo4ssava-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2023-08-14T08:42:22.351926Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2023-08-14T08:41:57.684193Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2023-08-14T08:42:22.492459Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "actionlog-prod-00012-k2v",
+    "latestReadyRevisionName": "actionlog-prod-00012-k2v",
+    "observedGeneration": 12,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "actionlog-prod-00012-k2v"
+      }
+    ],
+    "url": "https://actionlog-prod-wwlo4ssava-uc.a.run.app"
+  }
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "createTime": "2024-09-12T17:38:32.961961Z",
+    "description": "Created by gcloud",
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/sgs-playvox/locations/asia/repositories/asia.gcr.io",
+    "updateTime": "2024-09-12T17:39:54.492091Z",
+    "vulnerabilityScanningConfig": {
+      "enablementState": "SCANNING_DISABLED",
+      "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+      "lastEnableTime": "2024-09-12T17:38:16.490703615Z"
+    }
+  },
+  {
+    "createTime": "2024-09-12T17:38:31.009205Z",
+    "description": "Created by gcloud",
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/sgs-playvox/locations/europe/repositories/eu.gcr.io",
+    "updateTime": "2024-09-12T17:39:51.008510Z",
+    "vulnerabilityScanningConfig": {
+      "enablementState": "SCANNING_DISABLED",
+      "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+      "lastEnableTime": "2024-09-12T17:38:17.839012283Z"
+    }
+  },
+  {
+    "createTime": "2024-09-12T17:38:23.538704Z",
+    "description": "Created by gcloud",
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/sgs-playvox/locations/us/repositories/gcr.io",
+    "sizeBytes": "2006111389",
+    "updateTime": "2024-09-12T17:39:58.303104Z",
+    "vulnerabilityScanningConfig": {
+      "enablementState": "SCANNING_DISABLED",
+      "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+      "lastEnableTime": "2024-09-12T17:38:14.834460231Z"
+    }
+  },
+  {
+    "createTime": "2024-09-12T17:38:24.185517Z",
+    "description": "Created by gcloud",
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/sgs-playvox/locations/us/repositories/us.gcr.io",
+    "updateTime": "2024-09-12T17:39:49.971436Z",
+    "vulnerabilityScanningConfig": {
+      "enablementState": "SCANNING_DISABLED",
+      "enablementStateReason": "API containerscanning.googleapis.com is not enabled.",
+      "lastEnableTime": "2024-09-12T17:38:15.257410696Z"
+    }
+  },
+  {
+    "createTime": "2023-07-03T09:44:17.227910Z",
+    "description": "Cloud Run Source Deployments",
+    "format": "DOCKER",
+    "mode": "STANDARD_REPOSITORY",
+    "name": "projects/sgs-playvox/locations/us-central1/repositories/cloud-run-source-deploy",
+    "satisfiesPzi": true,
+    "updateTime": "2023-07-03T09:44:17.227910Z",
+    "vulnerabilityScanningConfig": {
+      "enablementState": "SCANNING_DISABLED",
+      "enablementStateReason": "API containerscanning.googleapis.com is not enabled."
+    }
+  }
+]

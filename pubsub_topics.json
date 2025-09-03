@@ -1,0 +1,26 @@
+[
+  {
+    "labels": {
+      "spotify-managed-pubsub-topic-id": "container-analysis-notes-v1"
+    },
+    "name": "projects/sgs-playvox/topics/container-analysis-notes-v1"
+  },
+  {
+    "labels": {
+      "spotify-managed-pubsub-topic-id": "container-analysis-occurrences-v1"
+    },
+    "name": "projects/sgs-playvox/topics/container-analysis-occurrences-v1"
+  },
+  {
+    "labels": {
+      "spotify-managed-pubsub-topic-id": "container-analysis-notes-v1beta1"
+    },
+    "name": "projects/sgs-playvox/topics/container-analysis-notes-v1beta1"
+  },
+  {
+    "labels": {
+      "spotify-managed-pubsub-topic-id": "container-analysis-occurrences-v1beta1"
+    },
+    "name": "projects/sgs-playvox/topics/container-analysis-occurrences-v1beta1"
+  }
+]

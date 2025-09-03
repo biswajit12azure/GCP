@@ -1,0 +1,24 @@
+[
+  {
+    "destination": "logging.googleapis.com/projects/sgs-playvox/locations/global/buckets/_Default",
+    "exclusions": [
+      {
+        "createTime": "2023-10-17T15:22:56.338099252Z",
+        "description": "SETI ingests GCS logs and would like to exclude them         from individual projects' Stackdriver instances.",
+        "filter": "LOG_ID(dataflow.googleapis.com/jvm-gc) OR         (LOG_ID(cloudaudit.googleapis.com/data_access) AND resource.type=gcs_bucket) OR         (resource.type=\"dataflow_step\" AND LOG_ID(dataflow.googleapis.com/worker-startup)         AND jsonPayload.line=~\"exec.go\" AND severity<=INFO)",
+        "name": "seti_gcs_log_excluder",
+        "updateTime": "2024-05-24T15:36:53.986105852Z"
+      }
+    ],
+    "filter": "NOT LOG_ID(\"cloudaudit.googleapis.com/activity\") AND NOT LOG_ID(\"externalaudit.googleapis.com/activity\") AND NOT LOG_ID(\"cloudaudit.googleapis.com/system_event\") AND NOT LOG_ID(\"externalaudit.googleapis.com/system_event\") AND NOT LOG_ID(\"cloudaudit.googleapis.com/access_transparency\") AND NOT LOG_ID(\"externalaudit.googleapis.com/access_transparency\")",
+    "name": "_Default",
+    "resourceName": "projects/sgs-playvox/sinks/_Default",
+    "updateTime": "2024-05-24T15:36:53.986105852Z"
+  },
+  {
+    "destination": "logging.googleapis.com/projects/sgs-playvox/locations/global/buckets/_Required",
+    "filter": "LOG_ID(\"cloudaudit.googleapis.com/activity\") OR LOG_ID(\"externalaudit.googleapis.com/activity\") OR LOG_ID(\"cloudaudit.googleapis.com/system_event\") OR LOG_ID(\"externalaudit.googleapis.com/system_event\") OR LOG_ID(\"cloudaudit.googleapis.com/access_transparency\") OR LOG_ID(\"externalaudit.googleapis.com/access_transparency\")",
+    "name": "_Required",
+    "resourceName": "projects/sgs-playvox/sinks/_Required"
+  }
+]

@@ -1,0 +1,115 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "cloud-console",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "2dc555ef-52d3-4769-ba85-7a7cca2028cc",
+      "run.googleapis.com/urls": "[\"https://playvoxbatch-prod-769594606898.us-central1.run.app\",\"https://playvoxbatch-prod-wwlo4ssava-uc.a.run.app\"]",
+      "serving.knative.dev/creator": "api-khoros-playvox@spotify.com",
+      "serving.knative.dev/lastModifier": "api-khoros-playvox@spotify.com"
+    },
+    "creationTimestamp": "2023-07-14T12:42:46.009149Z",
+    "generation": 14,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "name": "playvoxbatch-prod",
+    "namespace": "769594606898",
+    "resourceVersion": "AAYCqShSnd0",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/769594606898/services/playvoxbatch-prod",
+    "uid": "a475a5fa-63de-4dc8-8cf3-90956ce598eb"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "cloud-console",
+          "run.googleapis.com/cloudsql-instances": "sgs-playvox:us-central1:khoros-playvox-prod"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "bcf919e4-da57-49b3-835c-fe65b47f25ac",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "SPRING_PROFILES_ACTIVE",
+                "value": "prod"
+              }
+            ],
+            "image": "gcr.io/sgs-playvox/github.com/khorospv/playvoxbatch@sha256:61760ad4b33dc6990efd3feb568d5318a5465c3f06a93db872f3679f17f55860",
+            "ports": [
+              {
+                "containerPort": 8088,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "2000m",
+                "memory": "2Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8088
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "sgs-playvox-cloudrun@sgs-playvox.iam.gserviceaccount.com",
+        "timeoutSeconds": 1200
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://playvoxbatch-prod-wwlo4ssava-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2023-08-11T17:36:49.392298Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2023-08-11T17:36:00.742963Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2023-08-11T17:36:49.495517Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "playvoxbatch-prod-00014-lg5",
+    "latestReadyRevisionName": "playvoxbatch-prod-00014-lg5",
+    "observedGeneration": 14,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "playvoxbatch-prod-00014-lg5"
+      }
+    ],
+    "url": "https://playvoxbatch-prod-wwlo4ssava-uc.a.run.app"
+  }
+}

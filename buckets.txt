@@ -1,0 +1,7 @@
+gs://artifacts.sgs-playvox.appspot.com/
+gs://asia.artifacts.sgs-playvox.appspot.com/
+gs://eu.artifacts.sgs-playvox.appspot.com/
+gs://sgs-playvox.appspot.com/
+gs://sgs-playvox_cloudbuild/
+gs://staging.sgs-playvox.appspot.com/
+gs://us.artifacts.sgs-playvox.appspot.com/

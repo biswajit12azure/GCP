@@ -1,0 +1,63 @@
+[
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "0-65535"
+        ]
+      },
+      {
+        "IPProtocol": "udp",
+        "ports": [
+          "0-65535"
+        ]
+      },
+      {
+        "IPProtocol": "icmp"
+      }
+    ],
+    "creationTimestamp": "2023-06-26T09:39:50.287-07:00",
+    "description": "Allow internal traffic on the default network",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "3950970749773414841",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "default-allow-internal",
+    "network": "https://www.googleapis.com/compute/v1/projects/sgs-playvox/global/networks/default",
+    "priority": 65534,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/sgs-playvox/global/firewalls/default-allow-internal",
+    "sourceRanges": [
+      "10.128.0.0/9"
+    ]
+  },
+  {
+    "allowed": [
+      {
+        "IPProtocol": "tcp",
+        "ports": [
+          "22"
+        ]
+      }
+    ],
+    "creationTimestamp": "2024-09-25T04:29:13.317-07:00",
+    "description": "spotify rule to allow ssh connections via identity aware proxy, provisioned by #security",
+    "direction": "INGRESS",
+    "disabled": false,
+    "id": "7036591713227262694",
+    "kind": "compute#firewall",
+    "logConfig": {
+      "enable": false
+    },
+    "name": "spotify-allow-iap-ssh",
+    "network": "https://www.googleapis.com/compute/v1/projects/sgs-playvox/global/networks/default",
+    "priority": 1001,
+    "selfLink": "https://www.googleapis.com/compute/v1/projects/sgs-playvox/global/firewalls/spotify-allow-iap-ssh",
+    "sourceRanges": [
+      "35.235.240.0/20"
+    ]
+  }
+]

@@ -1,0 +1,114 @@
+{
+  "apiVersion": "serving.knative.dev/v1",
+  "kind": "Service",
+  "metadata": {
+    "annotations": {
+      "run.googleapis.com/client-name": "cloud-console",
+      "run.googleapis.com/ingress": "all",
+      "run.googleapis.com/ingress-status": "all",
+      "run.googleapis.com/operation-id": "da794f4c-baab-4029-ae08-08b1e4261a03",
+      "run.googleapis.com/urls": "[\"https://email-769594606898.us-central1.run.app\",\"https://email-wwlo4ssava-uc.a.run.app\"]",
+      "serving.knative.dev/creator": "api-khoros-playvox@spotify.com",
+      "serving.knative.dev/lastModifier": "api-khoros-playvox@spotify.com"
+    },
+    "creationTimestamp": "2023-07-24T07:07:31.357555Z",
+    "generation": 6,
+    "labels": {
+      "cloud.googleapis.com/location": "us-central1"
+    },
+    "name": "email",
+    "namespace": "769594606898",
+    "resourceVersion": "AAYCYqM/4ls",
+    "selfLink": "/apis/serving.knative.dev/v1/namespaces/769594606898/services/email",
+    "uid": "857fd1f9-66fa-4ed1-8954-b16baf9aaab1"
+  },
+  "spec": {
+    "template": {
+      "metadata": {
+        "annotations": {
+          "autoscaling.knative.dev/maxScale": "100",
+          "run.googleapis.com/client-name": "cloud-console"
+        },
+        "labels": {
+          "client.knative.dev/nonce": "5664cfe0-aaa5-4152-9e03-5c229f26884c",
+          "run.googleapis.com/startupProbeType": "Default"
+        }
+      },
+      "spec": {
+        "containerConcurrency": 80,
+        "containers": [
+          {
+            "env": [
+              {
+                "name": "SPRING_PROFILES_ACTIVE",
+                "value": "prod"
+              }
+            ],
+            "image": "gcr.io/sgs-playvox/github.com/khorospv/email@sha256:f89900841ebf9230103991c648c87aadc305d3a51cbe8b425539dba753b8efd0",
+            "ports": [
+              {
+                "containerPort": 8090,
+                "name": "http1"
+              }
+            ],
+            "resources": {
+              "limits": {
+                "cpu": "2000m",
+                "memory": "4Gi"
+              }
+            },
+            "startupProbe": {
+              "failureThreshold": 1,
+              "periodSeconds": 240,
+              "tcpSocket": {
+                "port": 8090
+              },
+              "timeoutSeconds": 240
+            }
+          }
+        ],
+        "serviceAccountName": "sgs-playvox-cloudrun@sgs-playvox.iam.gserviceaccount.com",
+        "timeoutSeconds": 300
+      }
+    },
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100
+      }
+    ]
+  },
+  "status": {
+    "address": {
+      "url": "https://email-wwlo4ssava-uc.a.run.app"
+    },
+    "conditions": [
+      {
+        "lastTransitionTime": "2023-08-08T05:28:49.100531Z",
+        "status": "True",
+        "type": "Ready"
+      },
+      {
+        "lastTransitionTime": "2023-08-08T05:28:32.731350Z",
+        "status": "True",
+        "type": "ConfigurationsReady"
+      },
+      {
+        "lastTransitionTime": "2023-08-08T05:28:49.187419Z",
+        "status": "True",
+        "type": "RoutesReady"
+      }
+    ],
+    "latestCreatedRevisionName": "email-00006-pdf",
+    "latestReadyRevisionName": "email-00006-pdf",
+    "observedGeneration": 6,
+    "traffic": [
+      {
+        "latestRevision": true,
+        "percent": 100,
+        "revisionName": "email-00006-pdf"
+      }
+    ],
+    "url": "https://email-wwlo4ssava-uc.a.run.app"
+  }
+}

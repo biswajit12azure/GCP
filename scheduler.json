@@ -1,0 +1,220 @@
+[
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "PUT",
+      "oidcToken": {
+        "audience": "https://monitor-service-wwlo4ssava-uc.a.run.app/support/report",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://monitor-service-wwlo4ssava-uc.a.run.app/support/report"
+    },
+    "lastAttemptTime": "2025-08-13T00:00:00.864970Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/DailyReport",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "0 0 * * *",
+    "scheduleTime": "2025-08-14T00:00:00.141123Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-09-29T03:52:37Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "POST",
+      "oidcToken": {
+        "audience": "https://table-clean-up-wwlo4ssava-uc.a.run.app/drop-table-author",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://table-clean-up-wwlo4ssava-uc.a.run.app/truncate"
+    },
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/MasterTableCleanUp",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "0 0 * * 0",
+    "state": "PAUSED",
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-08-31T04:09:44Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "PUT",
+      "oidcToken": {
+        "audience": "https://monitor-service-wwlo4ssava-uc.a.run.app/support/reset",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://monitor-service-wwlo4ssava-uc.a.run.app/support/reset"
+    },
+    "lastAttemptTime": "2025-08-13T03:00:00.103634Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/ResetErrorRecords",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "0 */3 * * *",
+    "scheduleTime": "2025-08-13T06:00:00.495953Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-08-02T10:11:02Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "POST",
+      "oidcToken": {
+        "audience": "https://table-clean-up-wwlo4ssava-uc.a.run.app/drop-table-author",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://table-clean-up-wwlo4ssava-uc.a.run.app/drop-table-author"
+    },
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/TableCleanUp",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "0 0 * * 0",
+    "state": "PAUSED",
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-08-31T04:09:55Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "GET",
+      "oidcToken": {
+        "audience": "https://actionlog-prod-wwlo4ssava-uc.a.run.app/khoros/conversation/",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://actionlog-prod-wwlo4ssava-uc.a.run.app/khoros/conversation/"
+    },
+    "lastAttemptTime": "2025-08-13T05:40:00.875926Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/actionlog-prod",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "*/5 * * * *",
+    "scheduleTime": "2025-08-13T05:45:00.951095Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-09-30T16:27:24Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "GET",
+      "oidcToken": {
+        "audience": "https://author-prod-wwlo4ssava-uc.a.run.app/khoros/author/",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://author-prod-wwlo4ssava-uc.a.run.app/khoros/author/"
+    },
+    "lastAttemptTime": "2025-08-13T05:40:00.990221Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/author-prod",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "*/5 * * * *",
+    "scheduleTime": "2025-08-13T05:45:00.602304Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-09-30T16:28:11Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "POST",
+      "oidcToken": {
+        "audience": "https://batchprocessing-prod-wwlo4ssava-uc.a.run.app/khoros/batch",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://batchprocessing-prod-wwlo4ssava-uc.a.run.app/khoros/batch"
+    },
+    "lastAttemptTime": "2025-08-13T05:40:00.201972Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/batchprocessing-prod",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "*/5 * * * *",
+    "scheduleTime": "2025-08-13T05:45:00.351995Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-09-30T16:28:27Z"
+  },
+  {
+    "attemptDeadline": "180s",
+    "httpTarget": {
+      "headers": {
+        "User-Agent": "Google-Cloud-Scheduler"
+      },
+      "httpMethod": "POST",
+      "oidcToken": {
+        "audience": "https://playvoxbatch-prod-wwlo4ssava-uc.a.run.app/playvox/batch",
+        "serviceAccountEmail": "sgs-playvox@appspot.gserviceaccount.com"
+      },
+      "uri": "https://playvoxbatch-prod-wwlo4ssava-uc.a.run.app/playvox/status"
+    },
+    "lastAttemptTime": "2025-08-13T05:40:00.480271Z",
+    "name": "projects/sgs-playvox/locations/us-central1/jobs/playvoxbatch-prod",
+    "retryConfig": {
+      "maxBackoffDuration": "3600s",
+      "maxDoublings": 5,
+      "maxRetryDuration": "0s",
+      "minBackoffDuration": "5s"
+    },
+    "schedule": "*/5 * * * *",
+    "scheduleTime": "2025-08-13T05:45:00.141137Z",
+    "state": "ENABLED",
+    "status": {},
+    "timeZone": "Etc/UTC",
+    "userUpdateTime": "2023-09-30T16:28:48Z"
+  }
+]
